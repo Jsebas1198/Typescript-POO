@@ -1,0 +1,11 @@
+{
+  "name": "repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Juan Sebastian Fernandez Saez <jsebas1198@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3"
+  }
+}
