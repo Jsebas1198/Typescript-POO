@@ -1,10 +1,9 @@
-//We want to read the values of the properties, but we dont want it to be modified outside the class
-//In this case we use getters
+//To let the modification of a property with some rules we can use the setter
 
 export class MyDate {
   constructor(
     private year: number = 2001,
-    private _month: number = 12, //To use the getter we rename the property
+    private _month: number = 12,
     private day: number = 1
   ) {}
 
@@ -33,17 +32,23 @@ export class MyDate {
     return this.year % 4 === 0;
   }
 
-  //A getter must return something always, the following getter would have an error because it doesn't return nothing
-  // get noReturnError(): void {
-  //code
-  // }
+  //We can let someone modify the value of a month only if it is between 1 and 12
+  set month(newValue: number) {
+    if (newValue >= 1 && newValue <= 12) {
+      this._month = newValue;
+    } else {
+      throw new Error('month out of range');
+    }
+  }
 }
 
 //This would print the date with the valeus by default
 const myDate = new MyDate();
 console.log(myDate.printFormat());
 
-//We can access the month value by the getter and it can't be modified
+myDate.month = 4;
 console.log(myDate.month);
 
-console.log(myDate.isLeapYear);
+//this would throw an error
+myDate.month = 78;
+console.log('this console log should not be executed');
