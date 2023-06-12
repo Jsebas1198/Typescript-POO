@@ -1,0 +1,20 @@
+{
+  "id": 103,
+  "title": "Awesome Rubber Pants",
+  "price": 867,
+  "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
+  "images": [
+    "https://picsum.photos/640/640?r=5717",
+    "https://picsum.photos/640/640?r=5674",
+    "https://picsum.photos/640/640?r=8817"
+  ],
+  "creationAt": "2023-06-12T02:09:07.000Z",
+  "updatedAt": "2023-06-12T02:09:07.000Z",
+  "category": {
+    "id": 4,
+    "name": "Shoes",
+    "image": "https://picsum.photos/640/640?r=8507",
+    "creationAt": "2023-06-12T02:09:06.000Z",
+    "updatedAt": "2023-06-12T02:09:06.000Z"
+  }
+}
